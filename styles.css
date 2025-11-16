@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'norse';
+}
+
+@font-face {
+    font-family: norse;
+    src: url(resouces/Norse-Bold.otf);
+}
+
+
+.page {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(243, 241, 239);
+}
+
+main {
+    grid-column: 5/13;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 300px) 100px;
+overflow: hidden;
+}
+
+#side-logo {
+    grid-column: 1/5;
+    background-image: url(resouces/waterfall.jpg);
+    background-size: cover;
+    grid-row: 1;
+}
+ #text {
+    grid-column: 2/ 6;
+    grid-row: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ #form {
+    grid-column: 1/ 7;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 2rem;
+    
+ }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+ input {
+    border-radius: 5px;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    width: 250px;
+    background-color:  rgba(212, 212, 212, 0.5);
+    
+ }
+
+ input:focus{
+    outline: green solid 2px;
+    border-radius: 5px;
+ }
+
+ input:valid {
+    background-color:  rgba(0, 128, 0, 0.5);
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+ }
+
+
+ 
+ .name, .password, .contact {
+    width: 100%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+ }
+ 
+p {
+    font-size: 1.4rem;
+}
+
+ label {
+    width: 120px;
+ }
+
+ form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+ }
+
+.side-logo {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.side-logo img {
+    width: 30%;
+    height: auto;
+}
+
+.title {
+    font-size: 4rem;
+
+}
+
+em {
+    font-size: 1.5rem;
+}
